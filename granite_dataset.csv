@@ -1,0 +1,50 @@
+stone_id,stone_name,stone_type,origin_country,color_main,color_secondary,color_tone,pattern_type,style_tag,price_min,price_max,popular_use,indoor_outdoor,luxury_level,source_url,price_cut_min,price_cut_max
+G001,BLUE PEARL #2,granite,Norway,blue,grey,dark,speckled,luxury,2490,2890,"kitchen_counter, bar_counter, table_top, floor",both,mid,https://www.siamtak.com/products/blue-pearl-2,3790,4390
+G002,AFRICAN BLACK,granite,India,black,grey,dark,linear,modern,1890,2590,"kitchen_counter, stairs, floor, wall",both,high,https://www.siamtak.com/products/african-black,2890,3890
+G003,RIVER GOLD,granite,India,beige,brown,light,vein,classic,1990,1990,"kitchen_counter, wall, floor, island",both,mid,https://www.siamtak.com/products/river-gold,2990,2990
+G004,RIVER WHITE,granite,India,white,gray,light,vein,modern,1790,2390,"kitchen_counter, wall, island, bathroom",both,high,https://www.siamtak.com/products/river-white,2690,3590
+G005,BIANCO BLACK,granite,India,black,white,dark,patch,luxury,1790,2390,"kitchen_counter, island, wall, floor",both,high,https://www.siamtak.com/products/bianco-black,2990,3590
+G006,CLASSICAL WHITE,granite,India,white,black,light,speckle,classic,1790,1990,"kitchen_counter, floor, wall",both,mid,https://www.siamtak.com/products/classic-white,2890,2990
+G007,BLACK FOREST,granite,India,black,white,dark,vein,luxury,1890,2490,"kitchen_counter, island, feature_wall",both,high,https://www.siamtak.com/products/black-forest,2890,3790
+G008,VISCON WHITE,granite,India,white,gray,cool,vein,modern,1590,2490,"kitchen_counter, island, floor, wall",both,high,https://www.siamtak.com/products/viscon-white,2390,3790
+G009,TITANIUM BLACK,granite,Brazil,black,gold,dark,vein,luxury,2190,2590,"kitchen_counter, island, feature_wall",both,high,https://www.siamtak.com/products/titanium-black,3290,3890
+G010,BLACK GALAXY,granite,India,black,gold,dark,speckle,luxury,1990,2490,"kitchen_counter, island, floor, wall",both,high,https://www.siamtak.com/products/black-galaxy,2990,3790
+G011,EMERALD PEARL,granite,Norway,green,black,dark,crystal,luxury,3479,3590,"kitchen_counter, island, feature_wall, reception_counter",both,premium,https://www.siamtak.com/products/emerald-pearl,5290,5390
+G012,ECLIPSE,granite,Brazil,black,white,dark,patch,luxury,2990,3890,"kitchen_counter, island, feature_wall",both,premium,https://www.siamtak.com/products/eclipse,4490,5890
+G013,MONALISA,granite,India,beige,brown,warm,vein,classic,2190,2190,"wall, floor, bathroom, feature_wall",both,high,https://www.siamtak.com/products/monalisa,3290,3290
+G014,TITANIUM GOLD,granite,India,black,gold,dark,patch,luxury,3590,3590,"island, feature_wall, kitchen_counter, reception_counter",both,premium,https://www.siamtak.com/products/titanium-gold,5390,5390
+G015,INDIAN BLACK,granite,India,black,gray,dark,speckle,modern,1350,1600,"kitchen_counter, bathroom_counter, floor",both,mid,https://www.siamtak.com/products/indian-black,2390,2690
+G016,AZUL WHITE,granite,India,white,gray,light,patch,luxury,2490,2490,"island, feature_wall, kitchen_counter",both,mid,https://www.siamtak.com/products/azul-white,3790,3790
+G017,LEMURIAN BLUE,granite,Madagascar,gray,blue,dark,crystal,luxury,4990,11990,"island, feature_wall, reception_counter, bar_counter",both,premium,https://www.siamtak.com/products/lemurian-blue,9990,15990
+G018,CHINA WHITE 602,granite,Vietnam,white,black,light,speckle,modern,459,459,"floor, wall_cladding, kitchen_counter",both,budget,https://www.siamtak.com/products/china-white-602-2,459,459
+G019,KHAO TONE,granite,Thailand,gray,brown,light,speckle,modern,1790,1790,"floor, kitchen_counter, outdoor_paving",both,mid,https://www.siamtak.com/products/khao-tone,2690,2690
+G020,ANTIQUE WHITE,granite,India,beige,brown,light,vein,luxury,2490,2490,"island, feature_wall, kitchen_counter",both,mid,https://www.siamtak.com/products/antique-white,3790,3790
+G021,ICON WHITE,granite,India,white,black,light,speckle,modern,1490,1490,"floor, kitchen_counter, bathroom_counter",both,mid,https://www.siamtak.com/products/icon-white,2190,2190
+G022,COLONIAL WHITE,granite,India,beige,red,light,speckle,modern,1890,2390,"kitchen_counter, bathroom_counter, floor",both,mid,https://www.siamtak.com/products/colonial-white,2890,3590
+G023,GOLDEN BLACK,granite,India,black,gold,dark,vein,luxury,1890,1890,"kitchen_counter, bar_counter, feature_wall",both,mid,https://www.siamtak.com/products/golden-black,2890,2890
+G024,ARMANI GOLD,granite,India,beige,gold,light,patch,luxury,1890,2090,"island, feature_wall, kitchen_counter",both,mid,https://www.siamtak.com/products/armani-gold,2890,2990
+G025,TAN BROWN,granite,China,brown,black,dark,speckle,modern,1890,1990,"kitchen_counter, outdoor_paving, floor",both,mid,https://www.siamtak.com/products/tan-brown,2890,2990
+G026,HIMALAYAN BLUE,granite,India,gray,red,dark,vein,modern,1790,2190,"feature_wall, floor, outdoor_paving",both,mid,https://www.siamtak.com/products/himalayan-blue,2680,3290
+G027,PRADA GOLD,granite,India,gold,black,light,vein,luxury,1690,1690,"feature_wall, kitchen_counter, island",both,mid,https://www.siamtak.com/products/prada-gold,2590,2590
+G028,BLACK PARADISE,granite,India,black,white,dark,vein,modern,1790,1790,"feature_wall, floor, kitchen_counter",both,budget,https://www.siamtak.com/products/black-paradise,"2,600",2900
+G029,VIZAG BLUE,granite,India,gray,blue,light,speckle,modern,1490,1490,"floor, outdoor_paving, staircase",both,mid,https://www.siamtak.com/products/vizag-blue,2290,2290
+G030,PINK JUPARANA,granite,India,pink,gray,light,vein,classic,1690,1790,"floor, staircase, wall_cladding",both,mid,https://www.siamtak.com/products/pink-juparana,2590,2690
+G031,GREEN PICASSO,granite,Iran,green,black,dark,vein,luxury,2190,2590,"feature_wall, island, luxury_counter",both,mid,https://www.siamtak.com/products/green-picasso,3290,3890
+G032,METALLIC,granite,Brazil,gray,black,dark,speckle,modern,2590,2590,"kitchen_counter, island, feature_wall",both,mid,https://www.siamtak.com/products/metallic,3890,3890
+G033,BLUE DUNE,granite,India,beige,black,light,vein,luxury,1890,2090,"kitchen_counter, island, feature_wall",both,mid,https://www.siamtak.com/products/blue-dune,2890,3190
+G034,BLACK COSMIC,granite,Brazil,black,gold,dark,vein,luxury,4990,5590,"island, feature_wall, luxury_counter",both,premium,https://www.siamtak.com/products/black-cosmic,7490,8390
+G035,LABRADOR,granite,India,brown,blue,dark,speckle,luxury,2990,3290,"island, kitchen_counter, feature_wall",both,premium,https://www.siamtak.com/products/labrador,4490,4935
+G036,MAGIC BLACK,granite,India,black,gray,dark,vein,luxury,1690,2290,"island, feature_wall, kitchen_counter",both,high,https://www.siamtak.com/products/magic-black,2590,3490
+G037,PARADISO,granite,India,pink,brown,light,speckle,classic,"1,170","1,170","floor, staircase, outdoor_paving",both,budget,https://www.siamtak.com/products/paradiso,1170,1170
+G038,MATRIX,granite,Brazil,black,gray,dark,granular,luxury,3590,4990,"countertop, kitchen_island, feature_wall",both,high,https://www.siamtak.com/products/matrix,5390,5990
+G039,MATRIX #2,granite,Brazil,gray,black,medium,swirl,modern,2990,2990,"feature_wall, kitchen_island, countertop",both,mid,https://www.siamtak.com/products/matrix-2,4490,4490
+G040,STREAM WHITE,granite,India,white,gray,light,linear,modern,1659,1659,"countertop, kitchen_island, feature_wall",both,budget,https://www.siamtak.com/products/stream-white,2490,2490
+G041,LAVANTE RED,granite,India,red,brown,medium,linear,rustic,1090,1090,"feature_wall, outdoor_wall, staircase",both,budget,https://www.siamtak.com/products/lavante-red,1690,1690
+G042,FLASH BLUE,granite,India,black,blue,dark,granular,modern,1490,1490,"countertop, kitchen_island, bar_counter",both,budget,https://www.siamtak.com/products/flash-blue,2290,2290
+G043,STEEL GREY,granite,Brazil,gray,black,dark,speckle,minimal,1790,1790,"countertop, flooring, staircase",both,budget,https://www.siamtak.com/products/steel-grey,2690,2690
+G044,CARMEN BROWN,granite,India,brown,gray,medium,linear,contemporary,1390,1690,"flooring, outdoor_wall, staircase",both,budget,https://www.siamtak.com/products/carmen-brown,2090,2590
+G045,OYSTER BLUE,granite,Brazil,white,black,light,vein,modern,1790,1990,"kitchen_island, feature_wall, countertop",both,budget,https://www.siamtak.com/products/oyster-blue,2690,2990
+G046,BLUE PEARL #1,granite,Norway,gray,blue,dark,granular,luxury,2590,3990,"countertop, kitchen_island, feature_wall",both,mid,https://www.siamtak.com/products/blue-pearl-1,3735,5790
+G047,CHINA PINK 731,granite,China,pink,beige,light,speckle,classic,1390,1390,"flooring, staircase, outdoor_paving",both,budget,https://www.siamtak.com/products/china-pink-731,2090,2090
+G048,CHERRY RED,granite,China,red,black,medium,speckle,traditional,499,699,"outdoor_paving, staircase, outdoor_wall",outdoor,budget,https://www.siamtak.com/products/cherry-red,1090,1090
+G049,MULTI RED,granite,India,red,black,dark,wave,rustic,1490,1790,"accent_wall, staircase, countertop, feature_area",interior,budget    ,https://www.siamtak.com/products/multi-red,2259,2690
