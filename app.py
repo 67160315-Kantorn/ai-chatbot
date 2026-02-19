@@ -27,6 +27,14 @@ st.markdown(
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+.hero-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+  background: linear-gradient(90deg, #6EE7F9, #A78BFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .section-title {
   font-weight: 700;
   font-size: 1.3rem;
@@ -197,15 +205,13 @@ def build_facts_table(df):
 # ==========================================================
 # HERO
 # ==========================================================
-st.markdown(
-    """
+st.markdown("""
 <div class="hero">
-  <h1>🪨 AI Stone Advisor</h1>
+  <h1 class="hero-title">🪨 AI Stone Advisor</h1>
   <p>พิมพ์งบประมาณ / การใช้งาน / สไตล์ หรือถามความรู้ได้เลย — ระบบจะแนะนำหินที่เหมาะ (พร้อมเหตุผลและการดูแล)</p>
 </div>
-""",
-    unsafe_allow_html=True,
-)
+""", unsafe_allow_html=True)
+
 st.write("")
 
 # ==========================================================
