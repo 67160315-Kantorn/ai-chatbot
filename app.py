@@ -27,6 +27,19 @@ st.markdown(
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+.section-title {
+  font-weight: 700;
+  font-size: 1.3rem;
+  background: linear-gradient(90deg, #6EE7F9, #A78BFA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 4px;
+}
+.section-sub {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+
 
 /* hero */
 .hero {
@@ -216,8 +229,9 @@ with left:
     st.caption("Tip: ตอนทดสอบหลายคำถาม แนะนำปิด Gemini กันโควต้า 429")
 
 with right:
-    st.markdown("### 💡 ตัวอย่างคำถาม")
-    st.markdown("<span style='opacity:0.7; font-size:0.9rem;'>(กดเพื่อใส่อัตโนมัติ)</span>", unsafe_allow_html=True)
+    st.markdown("<div class='section-title'>✨ แนะนำคำถามยอดนิยม</div>", unsafe_allow_html=True)
+    st.markdown("<div class='section-sub'>คลิกเพื่อทดลองแนะนำหินทันที หรือพิมพ์คำถามเองด้านล่าง</div>", unsafe_allow_html=True)
+
 
     st.write("")
 
