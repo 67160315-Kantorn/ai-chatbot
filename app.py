@@ -66,7 +66,7 @@ header {visibility: hidden;}
   opacity: 0.7;
 }
 
-/* chat cards (ยังไม่ได้ใช้โชว์หินทีละก้อน แต่เผื่อไว้) */
+/* card (เผื่อจะใช้ในอนาคต) */
 .card {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
@@ -134,8 +134,7 @@ genai.configure(api_key=api_key)
 model = genai.GenerativeModel("models/gemini-2.0-flash")
 
 BASE_DIR = os.path.dirname(__file__)
-CSV_PATH = os.path.join(BASE_DIR, "siamtak_granite.csv")  # ใช้ไฟล์ที่พี่ให้เป็นตัวอย่าง
-
+CSV_PATH = os.path.join(BASE_DIR, "siamtak_granite.csv")  # ใช้ไฟล์ scrape ของมึง
 
 # ==========================================================
 # SESSION STATE
@@ -145,15 +144,13 @@ if "messages" not in st.session_state:
 if "prefill" not in st.session_state:
     st.session_state.prefill = ""
 
-
 # ==========================================================
 # HELPERS
 # ==========================================================
 def load_products_context() -> str:
     """
     โหลดข้อมูลหินจาก siamtak_granite.csv
-    แล้วรวมเป็นข้อความยาว ๆ ให้ Gemini ใช้เป็น knowledge
-    คอนเซ็ปต์เหมือนของพี่ _load_products_context
+    รวมเป็นข้อความยาว ๆ ให้ Gemini ใช้เป็น knowledge
     """
     if not os.path.exists(CSV_PATH):
         return ""
@@ -193,7 +190,7 @@ def stream_chat_markdown(text: str):
     placeholder = container.empty()
 
     rendered = ""
-    for chunk in text.split(" "):  # พิมพ์ทีละคำ อ่านง่ายกว่าเป็นตัวอักษร
+    for chunk in text.split(" "):  # พิมพ์ทีละคำ
         rendered += chunk + " "
         placeholder.markdown(rendered)
         time.sleep(0.03)
@@ -209,12 +206,11 @@ def call_gemini_with_retry(prompt: str, max_retries: int = 3) -> str:
             msg = str(e)
             is_429 = ("429" in msg) or ("Resource exhausted" in msg)
             if is_429 and attempt < max_retries - 1:
-                # backoff นิดหน่อย
+                # backoff เบา ๆ กันโดน spam
                 time.sleep((2 ** attempt) + random.random())
                 continue
             return f"ขออภัย ระบบ AI มีปัญหาชั่วคราว: {e}"
     return "ขออภัย ระบบ AI ตอบไม่ได้ในตอนนี้"
-
 
 # ==========================================================
 # HERO
@@ -271,17 +267,18 @@ for m in st.session_state.messages:
     st.chat_message(m["role"]).markdown(m["content"])
 
 # ==========================================================
-# CHAT INPUT
+# CHAT INPUT (แก้จากของเดิม: ไม่ใช้ value= แล้ว)
 # ==========================================================
 prefill = st.session_state.get("prefill", "")
-user_input = st.chat_input(
-    "พิมพ์งบ / การใช้งาน / สไตล์ หรือคำถามเกี่ยวกับหินแกรนิตได้เลย",
-    value=prefill if prefill else "",
-)
 
-# เคลียร์ prefill หลังใช้ครั้งเดียว
-if user_input and prefill:
-    st.session_state.prefill = ""
+# chat_input ไม่มีพารามิเตอร์ value → เลยใช้ pattern นี้แทน
+user_input_raw = st.chat_input("พิมพ์งบ / การใช้งาน / สไตล์ หรือคำถามเกี่ยวกับหินแกรนิตได้เลย")
+user_input = user_input_raw
+
+# ถ้ามี prefill (จากปุ่มตัวอย่าง) และผู้ใช้ยังไม่พิมพ์อะไร → ใช้ prefill เป็นข้อความ
+if prefill and not user_input_raw:
+    user_input = prefill
+    st.session_state.prefill = ""  # ใช้แล้วเคลียร์
 
 if user_input:
     # เก็บประวัติ
@@ -308,7 +305,7 @@ if user_input:
    - ระบุช่วงราคาให้ตรงตามข้อมูล
 3) อธิบายเหตุผล (เรื่องงบประมาณ การใช้งาน พื้น/ผนัง/ครัว ภายใน/ภายนอก สไตล์ ฯลฯ)
 4) บอกข้อดี/ข้อเสียอย่างย่อ และแนะนำการดูแลรักษา
-5) ถ้าไม่มีหินที่อยู่ในงบ ให้บอกตรง ๆ ว่า \"ไม่มีในงบ\" และแนะนำช่วงงบที่เหมาะสมแทน
+5) ถ้าไม่มีหินที่อยู่ในงบ ให้บอกตรง ๆ ว่า "ไม่มีในงบ" และแนะนำช่วงงบที่เหมาะสมแทน
 
 ตอบเป็นภาษาไทยทั้งหมด จัดรูปแบบให้อ่านง่ายเป็นหัวข้อ/รายการ
 """
